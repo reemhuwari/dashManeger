@@ -26,7 +26,7 @@ Getting Started
 Follow these steps to run the project locally:
 
 1. Clone the repository
-git clone 
+git clone https://github.com/reemhuwari/dashManeger.git
 cd team-task-manager
 3. Run the project locally
 ى
