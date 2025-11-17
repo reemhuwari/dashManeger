@@ -37,13 +37,13 @@ export class AuthService {
           return throwError(() => new Error("Email already exists"));
         }
 
-        // create new id
+        
         const newId = users.length ? Math.max(...users.map(u => u.id)) + 1 : 1;
 
-        // generate token
+        
         const newToken = "fake-jwt-token-" + newId;
 
-        // new user body
+        
         const newUser = {
           id: newId,
           name,
@@ -53,7 +53,7 @@ export class AuthService {
           token: newToken
         };
 
-        // save new user in db.json
+        
         return this.http.post(this.apiUrl, newUser).pipe(
           map(() => ({
             token: newToken,
