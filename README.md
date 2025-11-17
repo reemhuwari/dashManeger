@@ -1,59 +1,44 @@
-# TeamTaskManager
+Team Task Manager
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+Team Task Manager is a web application for managing team tasks. It allows users to log in, create tasks, assign tasks to team members, and update their status. The application includes both an Admin Dashboard for administrators and a User Dashboard for regular users.
 
-## Development server
+Features
 
-To start a local development server, run:
+User Authentication (Login / Sign Up)
 
-```bash
-ng serve
-```
+Admin Dashboard to manage all tasks and assign them to users
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+User Dashboard to view and update personal tasks
 
-## Code scaffolding
+Modern UI built with Angular + Bootstrap
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Responsive design for all devices
 
-```bash
-ng generate component component-name
-```
+Technologies Used
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Frontend: Angular 17
 
-```bash
-ng generate --help
-```
+CSS Framework: Bootstrap 5
 
-## Building
+Languages: TypeScript, HTML, CSS
+Getting Started
 
-To build the project run:
+Follow these steps to run the project locally:
 
-```bash
-ng build
-```
+1. Clone the repository
+git clone 
+cd team-task-manager
+3. Run the project locally
+ى
+npm start
+Open your browser at http://localhost:4200
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The application will load and run locally
 
-## Running unit tests
+Notes
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+The UI uses Bootstrap for fast and responsive design.
 
-```bash
-ng test
-```
+All cards and list elements have no shadows to avoid visual clutter.
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Currently, the project uses mock data, but it can be extended to connect to a real API or database in the future.
