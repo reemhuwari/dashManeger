@@ -1,0 +1,24 @@
+<div class="container mt-4">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="fw-bold">User Dashboard</h2>
+    <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
+  </div>
+
+  <h3 class="fw-semibold mb-3">My Tasks</h3>
+
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let task of tasks">
+
+      <div>
+        <strong>{{task.title}}</strong> — {{task.description}}
+        <br>
+        <small class="text-muted">Status: {{task.status}}</small>
+      </div>
+
+      <button class="btn btn-primary btn-sm" (click)="updateStatus(task)">Update</button>
+    </li>
+  </ul>
+
+</div>

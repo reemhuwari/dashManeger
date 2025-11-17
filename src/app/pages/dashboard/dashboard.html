@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div class="card p-4 mx-auto" style="max-width: 450px;">
+    <h2 class="text-center fw-bold">Welcome, {{ user.name }}!</h2>
+    <p class="text-center text-secondary mb-4">Your role: {{ user.role }}</p>
+
+    <div class="text-center">
+      <a *ngIf="isAdmin" routerLink="/admin-tasks" class="btn btn-primary w-100 mb-2">
+        Go to Admin Dashboard
+      </a>
+
+      <a *ngIf="!isAdmin" routerLink="/user-tasks" class="btn btn-success w-100 mb-2">
+        Go to User Dashboard
+      </a>
+
+      <button (click)="logout()" class="btn btn-danger w-100">Logout</button>
+    </div>
+  </div>
+</div>

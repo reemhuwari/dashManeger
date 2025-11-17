@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "reemHuwari",
+      "role": "admin",
+      "email": "reem@example.com",
+      "password": "reem123",
+      "token": "fake-jwt-token-admin-1"
+    },
+    {
+      "id": "2",
+      "name": "GHazal",
+      "role": "user",
+      "email": "GHazal@example.com",
+      "password": "GHazal123",
+      "token": "fake-jwt-token-user-2"
+    },
+    {
+      "id": "3",
+      "name": "Mohammad",
+      "role": "user",
+      "email": "Mohammad@example.com",
+      "password": "Mohammad123",
+      "token": "fake-jwt-token-user-3"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "2",
+      "title": "test",
+      "description": "Setup PostgreSQL",
+      "assignedTo": 3,
+      "status": "in-progress"
+    }
+  ]
+}
